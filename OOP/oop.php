@@ -7,8 +7,9 @@
     }
 // ------------------------------------
 // ------------------------------------
-    //  tính đa hình  & thừa kế
-    class conmeo{
+
+   
+    class conmeo{  // & thừa kế
         public function an(){
             echo "<h1> con mèo đang ăn </h1>";
         }
@@ -67,9 +68,9 @@
   
     // ------------------------------------
 
-    
+
     class Infor{   // Mức truy cập public
-        public $name = "Nguyễn Văn A";
+        public $name;
         public $age;
         public function getname(){
             return $this->name;
@@ -77,5 +78,6 @@
     }
     $vd = new Infor();
     echo $vd->name =  "Nguyễn Văn A";
-    echo $vd->age = 22;
+    echo $vd->age = 22 ;
+
 ?>
